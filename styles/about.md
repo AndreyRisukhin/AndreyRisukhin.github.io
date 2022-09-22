@@ -1,0 +1,1 @@
+This is the folder for css (cascading style sheets) files, used to make the website look pretty.
