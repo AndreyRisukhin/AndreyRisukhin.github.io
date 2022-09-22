@@ -1,0 +1,14 @@
+body {
+    min-width: 400px;
+    max-width: 738px;
+    margin: 30px auto;
+ 
+    font-family: sans-serif;
+    font-size: 12pt;
+}
+
+@media
+only screen
+and (max-device-width: 768px) {
+    body { min-width: 300px; margin: 10px; font-size: 1em;}
+}
