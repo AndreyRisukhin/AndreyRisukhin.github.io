@@ -3,3 +3,5 @@ This repository holds the code for my personal GitHub Pages page. I am learning 
 Suggestions are always welcome!
 
 This tutorial helped me get started without being overwhelmed: http://jmcglone.com/guides/github-pages/
+
+It was then put into a different branch, when I tried to create a website based on one of my professors, James R Wilcox: https://jamesrwilcox.com/ 
