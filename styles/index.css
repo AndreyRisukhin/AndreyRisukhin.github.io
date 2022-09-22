@@ -1,5 +1,9 @@
 /* Template from CSE 490x Web Browser Engineering work */
 
+#main-page body {
+    font-family: 'Segoe UI';
+}
+
 pre { background-color: gray; }
 a { color: blue; }
 i { font-style: italic; }
@@ -16,17 +20,10 @@ button {
     background-color: orange;
 }
 
+/* The following will cause the nested class <div><div><p> </p></div></div> to be green */
+/* div div p { background-color: green; } */
 
-
-
-
-
-div div p { background-color: green; }
-
-div p { background-color: lightgreen; }
-
-foo { background-color: lightblue; }
-
-
+/* div p { background-color: lightgreen; } */
+/* foo { background-color: lightblue; } */
 
 code { font-family: Courier; }
