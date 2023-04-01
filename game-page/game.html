@@ -9,7 +9,14 @@ You can further customize this HTML code to add your own content, such as a titl
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Andrey Risukhin</title>
+		<link rel="stylesheet" type="text/css" href="styles/jrw-style.css">
+		<link rel="stylesheet" type="text/css" href="styles/jrw-main-page.css">
+		<!-- <link rel="stylesheet" type="text/css" href="styles/index.css"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+    <!-- <meta charset="utf-8"> -->
     <title>My Python Game</title>
     <style>
       /* Set the size of the game container */
@@ -20,6 +27,19 @@ You can further customize this HTML code to add your own content, such as a titl
     </style>
   </head>
   <body>
+    <h3>Elemental Game Page
+			<br>
+			<span style="font-size: 12pt; font-weight: normal;">The Golem Game</span>
+    </h3>
+	
+    <!-- <p class="email">
+			<span class="tt">risuka@cs.washington.edu</span><br>
+    </p> -->
+	
+    <p>
+    This is a game I have been wanting to develop for a while. Many sketches and notes have been created,
+    and I am excited to finally start work on the game using PyGame and Flask.
+    </p>
     <div id="game-container">
       <iframe src="/game" width="100%" height="100%" frameborder="0"></iframe>
     </div>
