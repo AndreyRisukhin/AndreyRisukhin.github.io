@@ -1,0 +1,30 @@
+<!-- In this HTML code, we define a container for the game window using the <div> element with the id attribute of game-container. We then set the width and height of this container to match the dimensions of the game window.
+
+Inside the container, we embed the game using an iframe, which is an HTML element that allows you to embed a web page or a document within another web page. We set the src attribute of the iframe to the route that serves your game file, and we set the width and height attributes to 100% so that the game window fills the container.
+
+Note that the frameborder attribute is set to 0 to remove the default border around the iframe.
+
+You can further customize this HTML code to add your own content, such as a title, a description, or other HTML elements. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Python Game</title>
+    <style>
+      /* Set the size of the game container */
+      #game-container {
+        width: 640px;
+        height: 480px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game-container">
+      <iframe src="/game" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+  </body>
+</html>
+
+
+
