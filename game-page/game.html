@@ -41,7 +41,8 @@ You can further customize this HTML code to add your own content, such as a titl
     and I am excited to finally start work on the game using PyGame and Flask.
     </p>
     <div id="game-container">
-      <iframe src="/game" width="100%" height="100%" frameborder="0"></iframe>
+      <!-- <iframe src="/game" width="100%" height="100%" frameborder="0"></iframe> -->
+      <iframe src="{{ url_for('game') }}" width="800" height="600"></iframe>
     </div>
   </body>
 </html>
