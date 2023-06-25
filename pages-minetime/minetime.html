@@ -2,6 +2,286 @@ description
 
 Coordinates list
 
+Bases
+Spawn, Waterfront Complex: Nether -76 y -85 ish
+Harvest Home: Nether -1956 123 3678
+Winter Home: Nether . . .
+
+
+Farms
+Raid: Overworld -1767 216 -2476
+Gold: Nether -271 118 -272
+
+
 relevant clips
 
 art/sketches
+
+
+
+Music links:
+https://pixabay.com/music/search/genre/elevator%20music/
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The easiest and best looking nether portal calculator to get the coordinates for your netherportals so you can build a nether highway in Minecraft.">
+    <meta name="keywords"
+        content="nether, portal, calculator, link, linked, highway, minecraft, coordinates, nether hub, hub, overworld, nether portal, distance, distance calculator, block, blocks, nether portal calculator, coords, portal calculator, minecraft nether calculator, nether portal minecraft, minecraft calculator">
+    <meta name="theme-color" content="#79563A" />
+    <meta property="og:title" content="Nether Calculator" />
+    <meta property="og:description" content="A calculator to figure out the coordinate for your netherhub." />
+    <meta property="og:image" content="https://nethercalculator.com/img/og_img.png" />
+    <meta property="og:url" content="https://nethercalculator.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <link rel="icon" href="img/favicon_16x16.png">
+    <link rel="apple-touch-icon" href="img/favicon_192x192.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="canonical" href="https://nethercalculator.com" />
+    <link rel="preload" href="css/MinecrafterAlt.woff" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="css/MinecrafterAlt.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- <script src="js/script.js"></script>
+    <script src="js/install.js"></script> -->
+    <!-- Matomo -->
+    <!-- <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//analytics.schneider.today/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '2']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+        })();
+    </script> -->
+    <!-- End Matomo Code -->
+    <title>Nether Portal Calculator: To build nether hubs and highways in Minecraft</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="css/googlefonts.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content" id="overworld">
+        <div class="background">
+            <div class="background__head"></div>
+            <div class="background__grass"></div>
+            <div class="background__dirt"></div>
+        </div>
+        <!-- <div class="content__head">
+            <h1 class="content__head__title">Nether Portal Calculator</h1>
+            <a id="installButton" class="download" hidden onclick="installWebapp()" href="#">
+                <img class="download__icon" src="./img/download.png" alt="download">
+            </a>
+        </div>
+        <div class="content__body">
+            <div class="coordinates">
+                <h2 class="coordinates__text">Overworld</h2>
+                <div class="coordinates__num">X</div>
+                <input type="number" class="coordinates__input" id="overworld_x" name="overworld_x"
+                    oninput="overworld_set('x', this.value)" onfocusout="focus_out('x', this.value, false)"
+                    placeholder="0"></input>
+                <div class="coordinates__num">Y</div>
+                <input type="number" class="coordinates__input" id="overworld_y" name="overworld_y"
+                    oninput="y_set(this.value)" onfocusout="focus_out('y', this.value, false)" placeholder="64"
+                    min="0"></input>
+                <div class="coordinates__num">Z</div>
+                <input type="number" class="coordinates__input" id="overworld_z" name="overworld_z"
+                    oninput="overworld_set('z', this.value)" onfocusout="focus_out('z', this.value, false)"
+                    placeholder="0"></input>
+            </div>
+            <div class="coordinates">
+                <h2 class="coordinates__text">Nether</h2>
+                <div class="coordinates__num">X</div>
+                <input type="number" class="coordinates__input" id="nether_x" name="nether_x"
+                    oninput="nether_set('x', this.value)" onfocusout="focus_out('x', this.value, true)"
+                    placeholder="0"></input>
+                <div class="coordinates__num">Y</div>
+                <input type="number" class="coordinates__input" id="nether_y" name="nether_y"
+                    oninput="y_set(this.value)" onfocusout="focus_out('y', this.value, true)" placeholder="64"
+                    min="0"></input>
+                <div class="coordinates__num">Z</div>
+                <input type="number" class="coordinates__input" id="nether_z" name="nether_z"
+                    oninput="nether_set('z', this.value)" onfocusout="focus_out('z', this.value, true)"
+                    placeholder="0"></input>
+            </div>
+            <div></div> -->
+        </div>
+    </div>
+
+    <div id="manual">
+        <div class="fade-out">
+            <div class="fade__dirt"></div>
+            <div class="fade"></div>
+        </div>
+        <div class="manual">
+            <br />
+            <!--<div class="sponsor" onmouseover="sponsorVisible()">
+                <h6>Sponsor</h6><br />
+                <p>If you want to host your own game server, consider using our partner <a href="https://clients.fragnet.net/aff.php?aff=202258">Fragnet</a>. It's a service built from gamers for gamers.</p><br />
+            </div>
+            <br />-->
+            <h2>Nether Portal Calculator – A Detailed Guide</h2>
+            <bold>Nether Portal Calculator!</bold><br /><br />
+            <p>The term is tossed around a lot among Minecraft gaming circles these days.</p>
+            <p>And if you are in one, you would probably know what that term means and how does it
+                associate with your all so loved game "Minecraft".</p>
+            <p>But if you don't, it's alright, because you are not alone. There is an astounding number
+                of Minecraft players who are still in the dark.</p>
+            <p>So, bear with me, read this description through to the end, and you'll be wise on the
+                subject.</p>
+            <p>So, let's begin with the basics.</p>
+            <h3>What is Nether Portal Calculator, After all?</h3>
+            <p>A Nether Portal is an autogenerated framework that connects two dimensions, the
+                Overworld and the Nether. Likewise, Minecraft Nether Portal Calculator is used
+                to compute the relative coordinates between the Overworld and the Nether.</p>
+            <p>When you've gotten to the point in Minecraft where you're constructing nether portals,
+                you can use the Nether Portal Calculator to figure out where to place your return gate
+                so that it connects as a link between the Overworld and the Nether.</p>
+            <h3>Why Use a Nether Portal Calculator?</h3>
+            <p>Nether portals help speed up movement through the Overworld, but if you're in a world
+                with some other players who build gates, it's not unusual to emerge in an unexpected
+                place while travelling through a Nether Portal and end up at a wrong return gate.</p>
+            <p>For Instance, you created a portal from your home at X, Y, Z and moved through
+                it only to land in a nether portal room built by someone else. So, when you went back
+                into it, your X and Z coordinates were nowhere near where you had the entry gate, and
+                you had to sidle through the unknown landscape at night, avoiding mobs and hazards.</p>
+            <p>Frightening! Isn't it?</p>
+            <p>And this is where Nether Portal Calculator comes in.</p>
+            <p>By using a Nether portal calculator to find X, Y, Z coordinates from Overworld
+                to Nether or vice versa, you will have the best chances of being hooked back up at the
+                right gates.</p>
+            <h3>Does the Nether Portal Calculator Works?</h3>
+            <p>Nether Portal Calculator is an intuitively designed calculator that determines where
+                portals should be placed in the Overworld and Nether dimensions to appear at the
+                correct coordinates. Simply put, Nether Portal Calculator does the maths for you.</p>
+            <p>Let's explain this with an Example!</p>
+            <p>If the Nether coordinates are 2,3 and 5, the overworld coordinates would be:</p>
+            <bold>X = 2x8 = 16</bold><br /><br />
+            <bold>Y = 3x1 = 03</bold><br /><br />
+            <bold>Z = 5x8 = 40</bold><br /><br />
+            <h3>Inspired? Wanna Learn How to Use Nether Portal
+                Calculator in Minecraft?</h3>
+            <p>Below is a simple stepwise guide for beginners:</p>
+            <bold>Step 1 – Choose an Overworld Location</bold><br /><br />
+            <p>Choose a place in the Overworld for a portal and build the frame without lighting it.</p>
+            <bold>Step 2 – Record the X, Y, Z Coordinates</bold><br /><br />
+            <p>Enter your portal frame as if you were going to use it, and press F3 to record
+                the coordinates X, Y, and Z, as well as the Facing (F) number.
+                Remember! This step is important if you want a seamless transition while passing
+                through a portal.</p>
+            <bold>Step 3 – Make Data Entries in Nether Portal Calculator</bold><br /><br />
+            <p>In our Overworld to Nether portal calculator, enter the coordinates. Double-check
+                your entries, particularly if the numbers are positive or negative. Obsidian is difficult
+                to disassemble and shift if you make a mistake. The calculator will convert the data
+                and show the final coordinates that you'll need to position your Nether-side portal.</p>
+            <bold>Step 4 – Light It and Move to Nether</bold><br /><br />
+            <p>Light your portal and go to the calculated Nether coordinates using F3.</p>
+            <bold>Step 5 – Destroy the Block Using Obsidian</bold><br /><br />
+            <p>Demolish and replace the block under your feet at these coordinates with obsidian.</p>
+            <bold>Step 6 – Align your Character Properly</bold><br /><br />
+            <p>Steer your character until the earlier F3 Facing (F) number matches up. Please note
+                that you will be facing this direction when you exit the portal.</p>
+            <bold>Step 7 – Place the Second Obsidian Block</bold><br /><br />
+            <p>Drop a second obsidian block onto the floor to your right or left (no specific
+                direction). These two obsidians will serve as the base for your portal.</p>
+            <bold>Step 8 – Build a Walkway</bold><br /><br />
+            <p>To ensure uninterrupted transition through the portal, build a walkway at least a few
+                blocks from the portal base in the matching "F" number direction. This guarantees
+                that you don't end up staring at a wall after exiting a portal.</p>
+            <bold>Step 9 – Light the Nether Portal Frame</bold><br /><br />
+            <p>Complete the Nether portal frame and then light it.</p>
+            <bold>Step 10 – Clean Up and Exit</bold><br /><br />
+            <p>Disable or destroy the Nether portal created by the game when you first accessed
+                the Nether. Exit the Nether through the newly constructed portal.
+                If you follow the above mentioned steps carefully, you will surely get a pair of
+                perfectly connected Nether portals.</p>
+            <p>Note:</p>
+            <p>• You can repeat the process and link an unlimited number of portals.</p>
+            <p>• If the game detects a portal in the other dimension that is precisely at your target
+                coordinates, it will only use that portal, even if other potential portals are within
+                range.</p>
+            <h2>Some Quick Tips</h2>
+            <p>• To prevent the linking problem, ensure that no two Overworld portals are
+                within 33 blocks of each other. You can have them that near if your design
+                calls for it; keep in mind that they will most likely both go to the same place.</p>
+            <p>• While minor misalignments in portal placement do not matter much, it is best to
+                be as precise as possible in the portal placement to avoid conflicts.</p>
+            <p>• Due to the scale variations between the two dimensions, Overworld is slacker in
+                the placement of the portals. Generally, you can shift a surface portal up to
+                8 blocks in either direction without fear of conflict, as long as you don't
+                violate the 33-meter proximity rule.</p>
+            <p>• This technique is also applicable in reverse. If you want to start a portal pair
+                from the Nether, follow the same steps but switch "Overworld" and "Nether" and
+                use the other calculator.</p>
+            <p>• When reading F3 coordinates, disregard the decimal portion (round off the
+                numbers). Only the whole number is important.</p>
+            <p>• The Altitude (Y) coordinate is essential if you create a portal near the
+                Overworld's sky limit; it will be near the Nether's ceiling, and vice versa. Keep
+                this in mind because, if you don't, you can end up having to build a slew of
+                ladders in the Nether to complete a walkway between the portals.</p>
+            <h2>Some Handy Strategies</h2>
+            <bold>• Use Multiple Portals</bold><br /><br />
+            <p>If you have several overworld locations that you want to be readily accessible,
+                simply travel to the Nether, create a portal, and travel through it. In case you
+                have a specific location in mind for the overworld portal that is close to where the
+                portal was generated, you can simply delete the overworld portal and build a new
+                one in that location.
+                If you're getting short on obsidian, you may want to consider taking the created
+                portal's corners. It may not look as good, but it will give you four extra obsidian
+                blocks. Place cheaper blocks, such as wood blocks or chiselled stone bricks, to
+                enhance the portal's look.</p>
+            <bold>• Try Tunnel System – It's safe</bold><br /><br />
+            <p>Building tunnels may be one of the best defences against mobs and getting lost,
+                though it takes more time and blocks. Since you can encounter mobs when
+                building tunnels, it is recommended that you keep all of your belongings in a
+                chest except for a stone or iron pickaxe, a large amount of ghast resistant blocks
+                such as cobblestone, and a large number of torches.
+                That way, if you die, you don't risk anything critically important. The exact
+                amount you carry will depend on how certain you are that you'll not die. Bring
+                just a few stacks of blocks and torches if you are a beginner, but you may want to
+                bring more if you are more experienced. For more supplies, you can always
+                return to your Overworld base.</p>
+            <bold>• Nether Roof</bold><br /><br />
+            <p>Nether roof is an exclusive feature in Java Edition. It is probably the safest
+                method of fast travel in the Nether and is also one of the easiest. For this, you
+                need to get to the Nether roof, for which there are several ways. Some of which
+                are listed HERE.</p>
+            <bold>• Use Map Scale – 1:8</bold><br /><br />
+            <p>If you want to link several portals, you can take advantage of the Nether's 1:8
+                scale and make a huge map of your Overworld in the Nether that is also at this
+                scale. It takes a lot of time, pickaxes, and bricks, but it's worth the effort, making it
+                unlikely for you to get lost.</p>
+            <h2>Parting Shot</h2>
+            <p>If you carefully follow the above steps, you'll more often than not end up at your desired
+                location. However, in rare cases, the gates may not link as planned. If this occurs, try to
+                do some research to ascertain what's wrong.</p>
+            <p>Just carry some torches, tools, and supplies, just in case of any eventuality.</p>
+            <p>So, Try out the Nether Portal Calculator!</p>
+            <p>We'll be looking forward to Your valuable feedback</p>
+            <p>
+                <bold>Happy Minecrafting!</bold>
+            </p>
+        </div>
+    </div>
+    <!-- <footer itemscope itemtype="https://schema.org/Person">
+        <span class="text__highlight"><a class="footer__link wiggle" href="https://ko-fi.com/sleien"
+                title="Wanna buy me a coffee for this amazing site? Go for it!" itemprop="url"> Buy me a
+                coffee</a></span> - Made with love in Switzerland by Noah and
+        Gonios - Contact information:
+        <a class="footer__link" href="mailto:hallo@nethercalculator.com"
+            title="Questions? Don't hesitate to contact me." itemprop="email">hallo@nethercalculator.com</a>
+    </footer> -->
+</body>
+
+</html>
