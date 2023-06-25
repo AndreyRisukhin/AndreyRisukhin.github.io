@@ -85,7 +85,33 @@ https://pixabay.com/music/search/genre/elevator%20music/
             <a id="installButton" class="download" hidden onclick="installWebapp()" href="#">
                 <img class="download__icon" src="./img/download.png" alt="download">
             </a>
+        </div> -->
+
+        <div class="content__body">
+            <div class="coordinates">
+                <h2 class="coordinates__text">Overworld</h2>
+                <div class="coordinates__num">X</div>
+                <div class="coordinates__num">Y</div>
+                <div class="coordinates__num">Z</div>
+            </div>
+            <div class="coordinates">
+                <h2 class="coordinates__text">Nether</h2>
+                <div class="coordinates__num">X</div>
+                <input type="number" class="coordinates__input" id="nether_x" name="nether_x"
+                    oninput="nether_set('x', this.value)" onfocusout="focus_out('x', this.value, true)"
+                    placeholder="0"></input>
+                <div class="coordinates__num">Y</div>
+                <input type="number" class="coordinates__input" id="nether_y" name="nether_y"
+                    oninput="nether_set('y', this.value)" onfocusout="focus_out('y', this.value, true)"
+                    placeholder="64" min="0"></input>
+                <div class="coordinates__num">Z</div>
+                <input type="number" class="coordinates__input" id="nether_z" name="nether_z"
+                    oninput="nether_set('z', this.value)" onfocusout="focus_out('z', this.value, true)"
+                    placeholder="0"></input>
+            </div>
         </div>
+
+        <!--
         <div class="content__body">
             <div class="coordinates">
                 <h2 class="coordinates__text">Overworld</h2>
